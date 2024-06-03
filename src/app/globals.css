@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #f5f5f5;
+  --background: #1b1b1b;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+/* form */
+
+.form {
+  @apply flex flex-col max-w-md text-center backdrop-blur-xl px-16 py-12 rounded-2xl border-stone-100 border-2 absolute top-1/2 -translate-y-1/2;
+}
+
+.form-login {
+  left: 60%
+}
+
+.form-register {
+  left: 15%
+}
+
+.title {
+  @apply text-3xl;
+}
+
+.label {
+  @apply text-base text-left;
+}
+
+.input {
+  @apply bg-transparent border-b-2 border-stone-100;
+}
+
+.input:focus-visible {
+  outline: none;
+}
+
+.form-btn {
+  @apply rounded-md border-2 border-stone-100 py-2;
+}
+
+.btn {
+  @apply py-2 px-5 rounded-md border-2 border-stone-100;
+}
+
+.btn-group {
+  @apply flex justify-between mx-auto mt-3;
+  max-width: 85%;
+}
+
+tr:not(:first-of-type) {
+  @apply border-t-2;
+}
+
+th {
+  @apply py-4;
+}
+
+td {
+  @apply py-3;
+}
