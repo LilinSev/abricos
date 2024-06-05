@@ -5,7 +5,7 @@ export default async function List() {
     return (
       <main className="py-16 mx-auto w-3/4">
         <h1 className="title mb-8">Users</h1>
-        <div className="rounded-xl border-2 border-stone-100 px-8">
+        <div className="rounded-xl border-2 px-8 list">
           <table className="w-full text-left">
             <tr>
               <th>Username</th> 

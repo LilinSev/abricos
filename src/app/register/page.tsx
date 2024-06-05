@@ -1,16 +1,8 @@
 import Form from "./form";
-import Image from 'next/image'
-import background from '../../../public/back_1.jpg'
 
 export default async function Register() {
   return (
-    <main className="w-full">
-      <div className="fixed -z-10 -mt-14 w-full h-full">
-        <Image 
-          src={background}
-          fill={true}
-          alt="Cosmonaut"/>
-      </div>
+    <main>
       <Form/>
     </main>
   );

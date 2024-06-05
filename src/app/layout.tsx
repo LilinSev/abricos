@@ -22,12 +22,14 @@ export default async function RootLayout({
   if (session) {
     content = <div className="btn-group">
         <Logout/>
-        <Link className="btn" href={"/register"}>Add User</Link>
+        <Link className="btn" href={"/register"}>Add New User</Link>
+        <Link className="btn" href={"/list"}>List of Users</Link>
       </div>;
   } else {
     content = <div className="btn-group">
         <Link className="btn" href={"/login"}>Login</Link>
-        <Link className="btn" href={"/register"}>Add User</Link>
+        <Link className="btn" href={"/register"}>Add New User</Link>
+        <Link className="btn" href={"/list"}>List of Users</Link>
       </div>;
   }
   return (

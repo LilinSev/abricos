@@ -17,13 +17,12 @@ export default function Form() {
     if(!response?.ok) {
       alert('Fields are bad')
     } else {
-      router.refresh();
       router.push('/list');
       router.refresh();
     }
   }
   return (
-    <form onSubmit={handleSubmit} className="form form-login">
+    <form onSubmit={handleSubmit} className="form">
         <label className="title mb-8">Login</label>
         <label className="label" htmlFor="username">Username</label>
         <input className="input mb-6" name="username" type="text"/>
