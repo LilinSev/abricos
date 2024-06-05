@@ -46,8 +46,12 @@ a {
   outline: none;
 }
 
+.input:focus-visible + .label {
+  margin-bottom: -20px;
+}
+
 .form-btn {
-  @apply rounded-md border-2 py-2;
+  @apply rounded-md border-2 py-2 hover:bg-gray-300 transition-all duration-300;
   border-color: var(--foreground);
 }
 
