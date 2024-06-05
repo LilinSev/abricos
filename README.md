@@ -6,6 +6,8 @@ First, install the node-modules:
 
 ```bash
 npm i
+# or
+npm install
 ```
 
 Secound, run the development server:
