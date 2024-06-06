@@ -46,10 +46,6 @@ a {
   outline: none;
 }
 
-.input:focus-visible + .label {
-  margin-bottom: -20px;
-}
-
 .form-btn {
   @apply rounded-md border-2 py-2 hover:bg-gray-300 transition-all duration-300;
   border-color: var(--foreground);
@@ -66,8 +62,10 @@ a {
 }
 
 .btn-group {
-  @apply backdrop-blur-lg h-full w-64 fixed flex flex-col border-r-2 box-content -left-64 pt-14 transition-all duration-300;
+  @apply h-full w-64 fixed flex flex-col border-r-2 box-content -left-64 pt-14 transition-all duration-300;
   border-color: var(--foreground);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
 }
 
 .btn-group:hover {
