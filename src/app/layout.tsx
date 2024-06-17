@@ -35,6 +35,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <span className="fixed top-3 left-4 text-lg">← Menu</span>
         <nav>
           {content}
         </nav>

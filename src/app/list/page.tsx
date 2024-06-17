@@ -8,12 +8,14 @@ export default async function List() {
         <div className="rounded-xl border-2 px-8 list">
           <table className="w-full text-left">
             <tr>
+              <th>N⁰</th> 
               <th>Username</th> 
               <th>Password</th> 
               <th>Id</th>
             </tr>
-            {users.map((user) => (
+            {users.map((user, index) => (
               <tr key={user.id}>
+                <td>{index + 1}</td>
                 <td>{user.username}</td>
                 <td>{user.password}</td>
                 <td>{user.id}</td>

@@ -15,7 +15,7 @@ export default function Form() {
       redirect: false,
     });
     if(!response?.ok) {
-      alert('Fields are bad')
+      alert('Incorrect data')
     } else {
       router.push('/list');
       router.refresh();
@@ -25,9 +25,9 @@ export default function Form() {
     <form onSubmit={handleSubmit} className="form">
         <label className="title mb-8">Login</label>
         <label className="label" htmlFor="username">Username</label>
-        <input className="input mb-6" name="username" type="text"/>
+        <input className="input mb-6" name="username" type="text" placeholder="admin"/>
         <label className="label" htmlFor="password">Password</label>
-        <input className="input mb-10" name="password" type="password"/>
+        <input className="input mb-10" name="password" type="password" placeholder="123"/>
         <button className="form-btn" type="submit">LogIn</button>
     </form>
   );
