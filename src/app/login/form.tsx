@@ -17,6 +17,7 @@ export default function Form() {
     if(!response?.ok) {
       alert('Incorrect data')
     } else {
+      alert('Successfully logged in');
       router.push('/list');
       router.refresh();
     }
